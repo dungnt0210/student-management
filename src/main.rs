@@ -1,9 +1,8 @@
-mod controller;
-mod helper;
 mod model;
 mod view;
-type Result<T> = std::result::Result<T, error::Error>;
 
 fn main() {
-    println!("Hello, world!");
+    model::user::init();
+    model::student::init();
+    view::user::menu();
 }
